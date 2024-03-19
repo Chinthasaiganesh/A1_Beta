@@ -20,4 +20,4 @@ If you have any questions, suggestions, or just want to connect, feel free to re
 
 Happy problem solving!
 
-\Chintha Sai Ganesh
+\[Chintha Sai Ganesh]
