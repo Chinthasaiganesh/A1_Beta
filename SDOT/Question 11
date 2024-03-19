@@ -1,0 +1,19 @@
+class Solution(object):
+    def waysToMakeFair(self, nums):
+        evens, odds = sum(nums[0::2]), sum(nums[1::2])
+        ans = toggle = 0     
+        for n in nums:
+            if toggle:
+                odds -= n
+                ans += (evens == odds)
+                evens += n
+
+            else:
+                evens -= n
+                ans += (evens == odds)
+                odds += n
+
+            toggle^= 1
+
+        return ans
+        
